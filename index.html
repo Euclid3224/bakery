@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тёплый Хлеб | Пекарня</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#hero">Тёплый Хлеб</a>
+
+    <!-- Кнопка открывает мобильное меню на небольших экранах -->
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Свежая выпечка каждый день</p>
+        <h1>Тёплый Хлеб</h1>
+        <p class="hero-text">Ароматная пекарня рядом с домом: хрустящие багеты, нежные десерты и кофе, который согревает.</p>
+        <a class="button" href="#contacts">Сделать заказ</a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-text">
+        <p class="eyebrow">О нас</p>
+        <h2>Печём с заботой и простыми ингредиентами</h2>
+        <p>Мы готовим хлеб, десерты и напитки небольшими партиями, чтобы каждый гость получал свежий вкус. В основе нашей работы — натуральные продукты, спокойная атмосфера и любовь к хорошей выпечке.</p>
+      </div>
+      <div class="about-card">
+        <strong>8:00</strong>
+        <span>первая партия хлеба уже на витрине</span>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">Меню</p>
+        <h2>Любимые позиции</h2>
+      </div>
+
+      <div class="cards-grid">
+        <article class="product-card">
+          <img src="assets/bakery-1.jfif" alt="Свежая лепёшка на деревянной витрине">
+          <div>
+            <h3>Хачапури с сыром</h3>
+            <p>Это блюдо наполнено сочным сыром, обволакивающим вкусом и невероятным ароматом.</p>
+            <span class="price">90 ₽</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/bakery-2.jfif" alt="Свежий хлеб на витрине">
+          <div>
+            <h3>Сосиска в тесте</h3>
+            <p>Хрустящая корочка, нежное тесто и сочная сосиска создают идеальное сочетание вкуса и аромата.</p>
+            <span class="price">55 ₽</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/bakery-3.jfif" alt="Выпечка в пекарне">
+          <div>
+            <h3>Чебурек</h3>
+            <p>Золотистый чебурек наполнен ароматной начинкой, сочным мясом и неповторимым вкусом свежей выпечки.</p>
+            <span class="price">90 ₽</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/bakery-4.jfif" alt="Самса с курицей">
+          <div>
+            <h3>Самса с курицей</h3>
+            <p>Попробуйте самсу с курицей и луком из слоеного теста - нежное и ароматное блюдо, которое приготовлено с любовью и вкусом.</p>
+            <span class="price">90 ₽</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Галерея</p>
+        <h2>Атмосфера пекарни</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="assets/atmosphere-1.jpg" alt="Гости у витрины пекарни">
+        <img src="assets/atmosphere-2.jpg" alt="Рабочий момент за стойкой пекарни">
+        <img src="assets/atmosphere-3.jpg" alt="Гостья в уютном зале пекарни">
+        <img src="assets/atmosphere-4.webp" alt="Свежий хлеб на деревянной витрине">
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="section-heading">
+        <p class="eyebrow">Отзывы</p>
+        <h2>Что говорят гости</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <blockquote>
+          <p>“Отличное место! Постоянно приобретаем здесь выпечку и остаемся в восторге) Из плюсов: качество и разнообразие продукции великолепное, персонал приветливый и внимательный, всегда готов помочь с выбором, есть место для парковки, а также можно набрать воды в автомате. А минусов не будет) Спасибо за прекрасное обслуживание и вкусную выпечку!”</p>
+          <cite>Ирина</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Всегда свежая, мягкая, воздушная выпечка, очень вкусные булочки, бублики. Цены приятно радуют, а разнообразие продукции впечатляет. В общем, если хотите чего-то сытного или чего-то сладкого, то точно нужно заглянуть.”</p>
+          <cite>Михаил</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Хорошая пекарня! Отличный ассортимент! Превосходное качество продукции! Попробуешь раз - вернёшься снова.”</p>
+          <cite>Дмитрий</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section contacts-section" id="contacts">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2>Заглядывайте за свежей выпечкой</h2>
+      </div>
+
+      <div class="contact-list">
+        <p><strong>Адрес:</strong> Ростовская область, сл. Родионово-Несветайская, ул. Бабичева 51</p>
+        <p><strong>Телефон:</strong> <a href="tel:+79298167009">+7 (929) 816-70-09</a></p>
+        <p><strong>Часы работы:</strong> ежедневно, 08:00–20:00</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Тёплый Хлеб. Свежая выпечка и тёплые встречи.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
