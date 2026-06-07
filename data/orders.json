@@ -1,0 +1,31 @@
+[
+  {
+    "id": "88932bfb-0a59-4534-a2d6-d5635263746c",
+    "number": "TH-20260606-8490",
+    "status": "completed",
+    "customer": {
+      "name": "Дмитрий",
+      "phone": "+79185489048",
+      "pickupTime": "сегодня через 20 мин",
+      "comment": ""
+    },
+    "items": [
+      {
+        "productId": "a2d29bfc-8838-4b09-bbf9-69ea8b0ef5ff",
+        "name": "Хлеб пшеничный",
+        "price": 55,
+        "quantity": 3
+      },
+      {
+        "productId": "wheat-loaf",
+        "name": "Хачапури с сыром",
+        "price": 75,
+        "quantity": 3
+      }
+    ],
+    "total": 390,
+    "itemCount": 6,
+    "createdAt": "2026-06-06T15:11:22.779Z",
+    "updatedAt": "2026-06-06T15:12:04.226Z"
+  }
+]
