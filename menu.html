@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Меню | Тёплый Хлеб</title>
+  <script src="redirect-to-server.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="logo" href="index.html#hero">Тёплый Хлеб</a>
 
-    <!-- Кнопка открывает мобильное меню на небольших экранах -->
     <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
       <span></span>
       <span></span>
@@ -21,174 +21,91 @@
       <a href="index.html#about">О нас</a>
       <a class="active" href="menu.html" aria-current="page">Меню</a>
       <a href="index.html#gallery">Галерея</a>
-      <a href="index.html#reviews">Отзывы</a>
       <a href="index.html#contacts">Контакты</a>
+      <a href="admin/">Кабинет</a>
     </nav>
   </header>
 
   <main class="menu-page">
     <section class="menu-hero">
       <div class="hero-content">
-        <p class="eyebrow">Меню пекарни</p>
+        <p class="eyebrow">Сегодня на витрине</p>
         <h1>Свежие вкусы на каждый день</h1>
         <p class="hero-text">Выбирайте хлеб, выпечку, напитки и десерты, которые мы готовим небольшими партиями к утренней и дневной витрине.</p>
-        <a class="button" href="index.html#contacts">Сделать заказ</a>
+        <a class="button" href="#catalog">Смотреть ассортимент</a>
       </div>
     </section>
 
-    <section class="section menu-catalog" aria-labelledby="menu-title">
-      <div class="section-heading">
-        <p class="eyebrow">Ассортимент</p>
-        <h2 id="menu-title">Меню по категориям</h2>
-      </div>
-
-      <div class="menu-tabs" role="tablist" aria-label="Категории меню">
-        <button class="tab-button is-active" id="tab-bread" type="button" role="tab" aria-selected="true" aria-controls="panel-bread" data-tab="bread">Хлеб</button>
-        <button class="tab-button" id="tab-pastry" type="button" role="tab" aria-selected="false" aria-controls="panel-pastry" data-tab="pastry">Выпечка</button>
-        <button class="tab-button" id="tab-drinks" type="button" role="tab" aria-selected="false" aria-controls="panel-drinks" data-tab="drinks">Напитки</button>
-        <button class="tab-button" id="tab-desserts" type="button" role="tab" aria-selected="false" aria-controls="panel-desserts" data-tab="desserts">Десерты</button>
-      </div>
-
-      <div class="menu-tab-panels">
-        <div class="menu-tab-panel is-active" id="panel-bread" role="tabpanel" aria-labelledby="tab-bread" data-panel="bread">
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Батон пшеничный</h3>
-                <p>Мягкий хлеб с тонкой золотистой корочкой для завтраков и семейного стола.</p>
-              </div>
-              <span class="menu-price">75 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Ржаной хлеб</h3>
-                <p>Плотный, ароматный и чуть пряный хлеб на каждый день.</p>
-              </div>
-              <span class="menu-price">85 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Багет</h3>
-                <p>Хрустящая корочка, воздушный мякиш и свежий аромат печи.</p>
-              </div>
-              <span class="menu-price">70 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Лепёшка</h3>
-                <p>Нежная лепёшка к супам, сырам и горячим блюдам.</p>
-              </div>
-              <span class="menu-price">60 ₽</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-tab-panel" id="panel-pastry" role="tabpanel" aria-labelledby="tab-pastry" data-panel="pastry" hidden>
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Хачапури с сыром</h3>
-                <p>Сочное сырное наполнение, мягкое тесто и насыщенный аромат.</p>
-              </div>
-              <span class="menu-price">90 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Сосиска в тесте</h3>
-                <p>Нежное тесто и сочная сосиска для быстрого перекуса.</p>
-              </div>
-              <span class="menu-price">55 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Чебурек</h3>
-                <p>Золотистая корочка и ароматная мясная начинка.</p>
-              </div>
-              <span class="menu-price">90 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Самса с курицей</h3>
-                <p>Слоёное тесто, курица и лук в тёплой сытной выпечке.</p>
-              </div>
-              <span class="menu-price">90 ₽</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-tab-panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" data-panel="drinks" hidden>
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Американо</h3>
-                <p>Горячий кофе с чистым вкусом и мягкой горчинкой.</p>
-              </div>
-              <span class="menu-price">120 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Капучино</h3>
-                <p>Кофе с молочной пенкой для неспешного утра.</p>
-              </div>
-              <span class="menu-price">160 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Чай травяной</h3>
-                <p>Тёплый напиток с мягким ароматом трав.</p>
-              </div>
-              <span class="menu-price">95 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Морс ягодный</h3>
-                <p>Освежающий напиток с насыщенным ягодным вкусом.</p>
-              </div>
-              <span class="menu-price">110 ₽</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="menu-tab-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts" data-panel="desserts" hidden>
-          <div class="menu-list">
-            <article class="menu-item">
-              <div>
-                <h3>Пирожное медовое</h3>
-                <p>Нежные коржи, крем и узнаваемый медовый аромат.</p>
-              </div>
-              <span class="menu-price">150 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Эклер</h3>
-                <p>Заварное тесто с лёгким кремом и шоколадной глазурью.</p>
-              </div>
-              <span class="menu-price">130 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Булочка с корицей</h3>
-                <p>Мягкая сладкая выпечка с корицей и сливочной ноткой.</p>
-              </div>
-              <span class="menu-price">115 ₽</span>
-            </article>
-            <article class="menu-item">
-              <div>
-                <h3>Творожный десерт</h3>
-                <p>Лёгкий десерт с нежной текстурой и ванильным вкусом.</p>
-              </div>
-              <span class="menu-price">145 ₽</span>
-            </article>
-          </div>
+    <section class="section menu-catalog" id="catalog" aria-labelledby="menu-title">
+      <div class="catalog-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Ассортимент</p>
+          <h2 id="menu-title">Что приготовили сегодня</h2>
         </div>
       </div>
+
+      <div class="catalog-controls">
+        <div class="menu-tabs" role="tablist" aria-label="Категории меню" data-category-tabs></div>
+        <button class="cart-toggle" type="button" data-cart-toggle>
+          Корзина <span data-cart-count>0</span>
+        </button>
+      </div>
+      <div class="product-catalog" data-product-catalog></div>
+      <p class="empty-state" data-empty-state hidden>В этой категории пока нет товаров.</p>
     </section>
   </main>
 
+  <aside class="cart-drawer" data-cart-drawer aria-label="Корзина" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Ваш заказ</p>
+        <h2>Корзина</h2>
+      </div>
+      <button class="icon-button" type="button" data-cart-close aria-label="Закрыть корзину">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <p class="empty-state" data-cart-empty>Корзина пока пуста.</p>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Итого</span>
+        <strong data-cart-total>0 ₽</strong>
+      </div>
+      <button class="button checkout-button" type="button" data-checkout disabled>Заказать</button>
+      <form class="pickup-order-form" data-order-form hidden>
+        <p class="pickup-note">Оплата при получении в пекарне: наличными или картой.</p>
+        <label class="form-field">
+          <span>Ваше имя</span>
+          <input type="text" name="name" maxlength="80" autocomplete="name" required>
+        </label>
+        <label class="form-field">
+          <span>Телефон</span>
+          <input type="tel" name="phone" maxlength="30" autocomplete="tel" placeholder="+7 900 000-00-00" required>
+        </label>
+        <label class="form-field">
+          <span>Когда планируете забрать</span>
+          <input type="text" name="pickupTime" maxlength="80" placeholder="Например, сегодня в 18:30">
+        </label>
+        <label class="form-field">
+          <span>Комментарий</span>
+          <textarea name="comment" rows="3" maxlength="300" placeholder="Необязательно"></textarea>
+        </label>
+        <div class="pickup-order-actions">
+          <button class="text-button" type="button" data-order-cancel>Назад</button>
+          <button class="button" type="submit">Подтвердить заказ</button>
+        </div>
+      </form>
+      <p class="form-message" data-checkout-message aria-live="polite"></p>
+    </div>
+  </aside>
+  <button class="drawer-backdrop" type="button" data-cart-backdrop aria-label="Закрыть корзину" hidden></button>
+
   <footer class="site-footer">
-    <p>© 2026 Тёплый Хлеб. Свежая выпечка и тёплые встречи.</p>
+    <p>© 2026 Тёплый Хлеб. Свежая выпечка каждый день.</p>
   </footer>
 
+  <script src="product-store.js"></script>
+  <script src="order-store.js"></script>
   <script src="script.js"></script>
+  <script src="catalog.js"></script>
 </body>
 </html>
